@@ -1,4 +1,4 @@
-package com.tahabellaoui.inventoryservice.entities; // Attention: entities
+package com.tahabellaoui.inventoryservice.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,7 +11,7 @@ import lombok.*;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // L'ID sera 1, 2, 3...
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;

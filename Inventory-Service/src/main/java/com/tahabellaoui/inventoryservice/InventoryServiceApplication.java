@@ -1,6 +1,6 @@
 package com.tahabellaoui.inventoryservice;
 
-import com.tahabellaoui.inventoryservice.entities.Product; // Attention: entities
+import com.tahabellaoui.inventoryservice.entities.Product;
 import com.tahabellaoui.inventoryservice.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,7 +17,6 @@ public class InventoryServiceApplication {
     @Bean
     CommandLineRunner commandLineRunner(ProductRepository productRepository){
         return args -> {
-            // Plus de UUID ! On laisse la base de données générer l'ID.
             productRepository.save(Product.builder()
                     .name("Computer")
                     .price(1000)

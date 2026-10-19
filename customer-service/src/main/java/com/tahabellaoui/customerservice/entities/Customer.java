@@ -1,4 +1,4 @@
-package com.tahabellaoui.customerservice.entities; // Attention: "entities" et non "entiities"
+package com.tahabellaoui.customerservice.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
